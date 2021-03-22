@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "SMS"
+  datasource:
+    url: jdbc:postgresql://localhost:5432/smsdb
+    username: postgres
+    password: postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL92Dialect
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+
